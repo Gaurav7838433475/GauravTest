@@ -18,7 +18,7 @@ namespace SDET42.TestScripts
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("http://localhost:8888/");
+            driver.Navigate().GoToUrl("http://localhost:8888/");//url
             driver.FindElement(By.Name("user_name")).SendKeys("admin");
             driver.FindElement(By.Name("user_password")).SendKeys("admin");
             driver.FindElement(By.Id("submitButton")).Click();
@@ -34,7 +34,7 @@ namespace SDET42.TestScripts
             IWebElement ele = driver.FindElement(By.Name("industry"));
             utilities.handleDropdownByIndex(ele, 8);
             IWebElement ele2 = driver.FindElement(By.Name("accounttype"));
-            utilities.handleDropdownByIndex(ele2, 3);
+            utilities.handleDropdownByIndex(ele2, 3);//fgf
             driver.FindElement(By.Name("emailoptout")).Click();
             driver.FindElement(By.Name("assigntype")).Click();
             IWebElement ele3 = driver.FindElement(By.Name("assigned_group_id"));
@@ -43,7 +43,7 @@ namespace SDET42.TestScripts
             driver.FindElement(By.Id("fax")).SendKeys("78384334751654545"); 
             driver.FindElement(By.Id("otherphone")).SendKeys("7838433454");
             driver.FindElement(By.Id("email1")).SendKeys("gaurav@gmail.com");
-            driver.FindElement(By.Name("button")).Click();
+            driver.FindElement(By.Name("button")).Click();//gaga
         }
 
     }
