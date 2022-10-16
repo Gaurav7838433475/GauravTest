@@ -22,7 +22,7 @@ namespace SDET42.TestScripts
             driver.Navigate().GoToUrl("http://localhost:8888/");//url
             driver.FindElement(By.Name("user_name")).SendKeys("admin");
             driver.FindElement(By.Name("user_password")).SendKeys("admin");
-            driver.FindElement(By.Id("submitButton")).Click();//ok
+            driver.FindElement(By.Id("submitButton")).Click();//okm
             driver.FindElement(By.XPath("//a[text()='Organizations']")).Click();
             driver.FindElement(By.Name("accountname")).SendKeys("gaurav kumar");
             driver.FindElement(By.Name("website")).SendKeys("gaurav@gmail.com");
